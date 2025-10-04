@@ -1,0 +1,49 @@
+{
+  "datasets": [
+    {
+      "name": "96747c7d",
+      "displayName": "pc_ml_diabetes",
+      "queryLines": [
+        "SELECT * FROM workspace.default.pc_ml_diabetes"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "9210177c",
+      "displayName": "Untitled page",
+      "pageType": "PAGE_TYPE_CANVAS"
+    },
+    {
+      "name": "5084b07c",
+      "displayName": "Global Filters",
+      "layout": [
+        {
+          "widget": {
+            "name": "a0b859b1",
+            "spec": {
+              "version": 2,
+              "widgetType": "filter-single-select",
+              "encodings": {},
+              "frame": {
+                "showTitle": true
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 2
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_GLOBAL_FILTERS"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    }
+  }
+}
