@@ -5,11 +5,11 @@ import numpy as np
 import psycopg2
 
 
-USER = st.secrets["postgres"]["USER"]
-PASSWORD = st.secrets["postgres"]["PASSWORD"]
-HOST = st.secrets["postgres"]["HOST"]
-PORT = st.secrets["postgres"]["PORT"]
-DBNAME = st.secrets["postgres"]["DBNAME"]
+USER = st.secrets["postgres"]["postgresql://postgres.vbeuhmiiygpljvqwqiyo"]
+PASSWORD = st.secrets["postgres"]["alfre943553109"]
+HOST = st.secrets["postgres"]["aws-1-us-east-2.pooler.supabase.com"]
+PORT = st.secrets["postgres"]["5432"]
+DBNAME = st.secrets["postgres"]["postgres"]
 
 # Configuración de la página
 st.set_page_config(page_title="Predicción de Diabetes", page_icon="💉")
