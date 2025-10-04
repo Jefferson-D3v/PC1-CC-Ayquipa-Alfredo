@@ -5,11 +5,11 @@ import numpy as np
 import psycopg2
 
 
-USER = st.secrets["postgres"]["postgresql://postgres.vbeuhmiiygpljvqwqiyo"]
-PASSWORD = st.secrets["postgres"]["alfre943553109"]
-HOST = st.secrets["postgres"]["aws-1-us-east-2.pooler.supabase.com"]
-PORT = st.secrets["postgres"]["5432"]
-DBNAME = st.secrets["postgres"]["postgres"]
+USER = "postgresql://postgres.vbeuhmiiygpljvqwqiyo"
+PASSWORD = "alfre943553109"
+HOST = "aws-1-us-east-2.pooler.supabase.com"
+PORT = "5432"
+DBNAME = "postgres"
 
 # Configuración de la página
 st.set_page_config(page_title="Predicción de Diabetes", page_icon="💉")
@@ -17,11 +17,11 @@ st.set_page_config(page_title="Predicción de Diabetes", page_icon="💉")
 # Conectar a la BD
 try:
     connection = psycopg2.connect(
-        user="postgresql://postgres.vbeuhmiiygpljvqwqiyo",
-        password="alfre943553109",
-        host="aws-1-us-east-2.pooler.supabase.com",
-        port="5432",
-        dbname="postgres"
+        user=USER,
+        password=PASSWORD,
+        host=HOST,
+        port=PORT,
+        dbname=DBNAME
     )
     cursor = connection.cursor()
     cursor.execute("SELECT NOW();")
