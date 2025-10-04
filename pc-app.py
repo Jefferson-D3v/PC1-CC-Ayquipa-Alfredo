@@ -5,7 +5,7 @@ import numpy as np
 import psycopg2
 
 
-USER = "postgresql://postgres.vbeuhmiiygpljvqwqiyo"
+USER = "postgres.vbeuhmiiygpljvqwqiyo"
 PASSWORD = "alfre943553109"
 HOST = "aws-1-us-east-2.pooler.supabase.com"
 PORT = "5432"
